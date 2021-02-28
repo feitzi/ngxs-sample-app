@@ -1,0 +1,14 @@
+<table class="table">
+  <thead>
+  <th scope="col">Name</th>
+  <th scope="col">Owner</th>
+  <th scope="col">Last Publish</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let repoItem of repositories$ | async ">
+    <td>  {{repoItem.name}}</td>
+    <td>  {{repoItem.owner}}</td>
+    <td>  {{repoItem.lastPublish}}</td>
+  </tr>
+  </tbody>
+</table>

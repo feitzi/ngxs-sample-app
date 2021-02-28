@@ -1,0 +1,5 @@
+<input type="text" class=" m-5" placeholder="Search your repo" (input)="onInputValueChanged($event.target.value)"/>
+
+<div class="spinner-border" role="status" *ngIf="isRepoSearchingRunning$ | async">
+  <span class="sr-only">Loading...</span>
+</div>
